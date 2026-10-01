@@ -97,7 +97,6 @@ Los objetos se dibujan con código en una cuadrícula de 584 × 500, sin suaviza
 - Colores y configuraciones: `src/data/roomSettings.ts`.
 - Objetos de la habitación: `src/scene/room-items/`.
 - Arquitectura de la habitación: `src/scene/architecture/`.
-- Imagen de referencia: `public/room.png`.
 
 La habitación incluye:
 
