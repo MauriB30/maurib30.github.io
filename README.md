@@ -1,155 +1,68 @@
-# Mi espacio · Portafolio Nuevo
+# Mauricio Blanco · Portafolio
 
-Portafolio local creado con Vite, React, TypeScript, Tailwind CSS, Prettier, Lucide React y PixiJS.
+Portafolio personal con una oficina interactiva en pixel art isométrico. La habitación acompaña la presentación de mi perfil, proyectos, tecnologías y canales de contacto: sus objetos también permiten recorrer las secciones.
 
-El proyecto se ejecuta en localhost. La publicación final la realizará el usuario.
+[Ver portafolio](https://maurib30.github.io/)
 
-## Iniciar
+## La experiencia
 
-Desde la carpeta del proyecto:
+- Navegación desde los objetos de la habitación y las pestañas del perfil.
+- Temas claro y oscuro vinculados a la lámpara.
+- Ventana con paisaje nevado de día, luna y estrellas de noche, y cortinas que se abren y cierran.
+- Globos de texto que identifican los objetos asociados a una sección.
+- Tecnologías representadas con iconos y nombres al pasar el cursor.
+- Diseño adaptable a escritorio y móvil, navegación por teclado y soporte para movimiento reducido.
+
+## Tecnologías
+
+| Área               | Herramientas                     |
+| ------------------ | -------------------------------- |
+| Interfaz           | React, TypeScript y Tailwind CSS |
+| Escena interactiva | PixiJS                           |
+| Iconos             | Lucide React y SVG de Devicon    |
+| Tipografía         | Oxanium                          |
+| Desarrollo         | Vite, pnpm y Prettier            |
+| Publicación        | GitHub Pages y GitHub Actions    |
+
+La escena combina sprites WebP con transparencia, geometría e iluminación en PixiJS. Los objetos se mantienen separados para conservar sus interacciones y facilitar los cambios en la habitación.
+
+## Desarrollo local
+
+El proyecto utiliza Node.js 24 y pnpm. La versión del gestor está definida en `package.json`.
 
 ```sh
-pnpm install
+pnpm install --frozen-lockfile
 pnpm dev
 ```
 
-Abrir http://localhost:3000/.
+La aplicación está disponible en [localhost:3000](http://localhost:3000/).
 
-Comandos disponibles:
+| Comando             | Descripción                                            |
+| ------------------- | ------------------------------------------------------ |
+| `pnpm build`        | Verifica TypeScript y genera la compilación en `dist`. |
+| `pnpm preview`      | Sirve la compilación localmente en el puerto 4173.     |
+| `pnpm typecheck`    | Verifica los tipos de TypeScript.                      |
+| `pnpm format`       | Aplica el formato de Prettier.                         |
+| `pnpm format:check` | Comprueba el formato sin modificar archivos.           |
 
-```sh
-pnpm format
-pnpm format:check
-pnpm typecheck
-pnpm build
-pnpm preview
-```
+El [visor de objetos](http://localhost:3000/?visor=objetos) permite revisar las piezas de la escena durante el desarrollo. Está disponible únicamente en ese entorno.
 
 ## Organización
 
 ```text
 src/
-  components/
-    atoms/
-    molecules/
-    organisms/
-    templates/
-  pages/
-  hooks/
-  data/
-  types/
-  scene/
-    architecture/
-      architecture.ts
-      floor.ts
-      floor-shadows.ts
-      room-layout.ts
-      walls.ts
-      window-view.ts
-      window.ts
-    composition/
-      objectCatalog.ts
-      sceneViewport.ts
-      workspaceLayout.ts
-    geometry/
-      pixel.ts
-      upholstery.ts
-      wood-grain.ts
-    interaction/
-      curtainMotion.ts
-      daylight.ts
-      lighting.ts
-      snowfall.ts
-    room-items/
-      bookcase.ts
-      books.ts
-      floor-lamp.ts
-      reading-chair.ts
-      chair.ts
-      desk.ts
-      desk-accessories.ts
-      electronics.ts
-      furniture.ts
-      keyboard.ts
-      mate.ts
-      monitor.ts
-      mouse.ts
-      mousepad.ts
-      pc-tower.ts
-      radiator.ts
-      thermos.ts
-      wastebasket.ts
-
-    createRoomScene.ts
-    materials.ts
-    spriteCache.ts
-    types.ts
-  styles/
+├─ assets/       # Sprites y recursos visuales
+├─ components/   # Interfaz React organizada con Atomic Design
+├─ data/         # Contenido del perfil, proyectos y configuración
+├─ hooks/        # Estado y comportamiento reutilizable
+├─ pages/        # Páginas del portafolio y del visor de objetos
+├─ scene/        # Arquitectura, objetos, composición e interacciones de PixiJS
+├─ styles/       # Estilos de la interfaz
+└─ types/        # Tipos compartidos
 ```
 
-La interfaz React sigue Atomic Design. PixiJS se utiliza únicamente para construir la habitación interactiva.
+Los componentes React se distribuyen en `atoms`, `molecules`, `organisms` y `templates`. La escena utiliza módulos por responsabilidad y un archivo propio para cada objeto de la habitación.
 
-Los objetos se dibujan con código en una cuadrícula de 584 × 500, sin suavizado, usando una estética de pixel art isométrico.
+## Publicación
 
-## Personalización
-
-- Contenido personal y proyectos: `src/data/portfolio.ts`.
-- Colores y configuraciones: `src/data/roomSettings.ts`.
-- Objetos de la habitación: `src/scene/room-items/`.
-- Arquitectura de la habitación: `src/scene/architecture/`.
-
-La habitación incluye:
-
-- Sillón de lectura tapizado en gris carbón.
-- Lámpara de pie con pantalla blanca acampanada, poste de madera y luz cálida, junto a la esquina.
-- Piso de 216 × 288 unidades con alfombra verde oscura, fibra corta y sombras de apoyo; muebles a su escala original.
-- Escritorio extendido de madera roble oscuro, con más superficie libre.
-- Papelera cilíndrica clara con borde enrollado y boca hundida, junto a la pared a la derecha del escritorio.
-- Computadora gamer con margen respecto del borde del escritorio.
-- Mouse blanco sobre un pad amplio.
-- Monitor sin logotipo, con pantalla y LED que conservan su luz en el modo nocturno.
-- Reflejo tenue del monitor sobre la madera, debajo de los accesorios.
-- Silla negra.
-- Termo y mate argentino.
-- Biblioteca de roble junto al sillón, orientada hacia el centro desde la pared de la ventana.
-- Ventana alta, con espacio de pared libre debajo.
-- Paisaje nevado con copos suaves; de noche, luna creciente, estrellas y ventanas cálidas a lo lejos. La nieve y las estrellas respetan la pausa y el movimiento reducido.
-- Radiador blanco fijado a la pared bajo la ventana.
-- Cortinas con animación de abrir y cerrar, por encima del radiador.
-- Luz de los cuatro cristales proyectada al suelo, sincronizada con las cortinas.
-- Vetas de roble y tapizados proyectados sobre las caras de cada objeto.
-
-La habitación conserva siempre la paleta verde Salvia. Los ajustes permiten abrir o cerrar cortinas, activar animaciones y restablecer estas preferencias, que se guardan localmente mediante `localStorage`.
-
-## Interacciones
-
-- Computadora → proyectos.
-- Foto → presentación.
-- Corcho → contacto.
-- Paredes en verde Salvia fijo.
-- Piso → mostrar textura.
-- Ventana → abrir o cerrar cortinas.
-- Lámpara de pie → cambiar iluminación.
-- Biblioteca, sillón, escritorio y papelera → mostrar mensajes del espacio de trabajo.
-
-La escena respeta la preferencia de movimiento reducido y libera sus recursos al desmontarse.
-
-## Dependencias autorizadas
-
-- Aplicación: `react`, `react-dom`, `lucide-react`, `pixi.js`.
-- Desarrollo: `vite`, `typescript`, `tailwindcss`, `prettier`.
-- Integración y tipos: `@vitejs/plugin-react`, `@tailwindcss/vite`, `@types/react`, `@types/react-dom`, `@types/node`.
-
-Toda dependencia directa adicional requiere explicación y autorización.
-
-## Gestor de paquetes
-
-Este proyecto utiliza únicamente pnpm.
-
-Debe conservarse solamente:
-
-```text
-pnpm-lock.yaml
-```
-
-No se deben crear ni conservar `package-lock.json`, `yarn.lock` u otros lockfiles.
+GitHub Actions instala las dependencias con pnpm, compila el proyecto y publica la carpeta `dist` en GitHub Pages cuando se suben cambios a `main`. El flujo está definido en [deploy.yml](.github/workflows/deploy.yml).
