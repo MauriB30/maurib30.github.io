@@ -1,0 +1,109 @@
+{
+  "repository": "https://github.com/devicons/devicon",
+  "tag": "v2.17.0",
+  "revision": "54cfe13ac10eaa1ef817a343ab0a9437eb3c2e08",
+  "base": "https://raw.githubusercontent.com/devicons/devicon/54cfe13ac10eaa1ef817a343ab0a9437eb3c2e08/",
+  "releaseUrl": "https://github.com/devicons/devicon/releases/tag/v2.17.0",
+  "assets": [
+    {
+      "file": "css3.svg",
+      "bytes": 778,
+      "sha256": "36b7d94b657d571d3f94042acbf6a4c86a5301a222f83f4b4583ad2acf6e297d"
+    },
+    {
+      "file": "express.svg",
+      "bytes": 914,
+      "sha256": "27ec7e3d21d59102c046a96277877abf78aa9d7ad244277345d9c395486d42d4"
+    },
+    {
+      "file": "git.svg",
+      "bytes": 778,
+      "sha256": "717a57ea97bf7e86de721dab3e68afac66332a10676d5c9abce4ae6a5a9c9983"
+    },
+    {
+      "file": "github.svg",
+      "bytes": 1866,
+      "sha256": "45262793de6292206a895ed63593cdb1eaed82074173f7f4b5bdb3e427ca805a"
+    },
+    {
+      "file": "html5.svg",
+      "bytes": 607,
+      "sha256": "34826e5b3315daadf4fa15f723a3c1d5ba4a89277bfd94e22ac4d7d3d54338c5"
+    },
+    {
+      "file": "javascript.svg",
+      "bytes": 1144,
+      "sha256": "0656ff65fc8eeacda5c78d7f9ffe91ec1eb919db64f56e0b7dcd460af4bbd36c"
+    },
+    {
+      "file": "linkedin.svg",
+      "bytes": 476,
+      "sha256": "71d3e25ef4e06ac34f385476cff2cef2757179af665cda086711d211d85610c0"
+    },
+    {
+      "file": "mongodb.svg",
+      "bytes": 5611,
+      "sha256": "d9f2bf7041264f4747e9969fb82ede0199c0ac97dfa8632aa0687d702ec05f7b"
+    },
+    {
+      "file": "mongoose.svg",
+      "bytes": 5371,
+      "sha256": "ff44cc80f119b5c4ae23bb4afeb4a1bca3c343565ad6e7cbf8cb3ea7e47db3d0"
+    },
+    {
+      "file": "nextjs.svg",
+      "bytes": 318,
+      "sha256": "a900ab756ae00312a306599e4071aeac106882b99e7a0487b70fc5556bcd15fb"
+    },
+    {
+      "file": "nodejs.svg",
+      "bytes": 1806,
+      "sha256": "3218687c5ea24a4d4c0a33dc5c287da38c33a72dcfe9382469d7ce4e0bf661fb"
+    },
+    {
+      "file": "postgresql.svg",
+      "bytes": 9178,
+      "sha256": "f220a436258ed014c512ba4f9c0de6b9e5c2c4b55331a0a29f8c7a1a12c36443"
+    },
+    {
+      "file": "postman.svg",
+      "bytes": 3729,
+      "sha256": "0b366c7a023328b0d95e8c90d9050519b8c31d206f8b34db17742488f72efccb"
+    },
+    {
+      "file": "prisma.svg",
+      "bytes": 474,
+      "sha256": "0d7625558f360303e7c090d746407569b37bb340d5e358ef0d22d918bad298b0"
+    },
+    {
+      "file": "react.svg",
+      "bytes": 2387,
+      "sha256": "5825b649c8c04dec13ecf01d0182401bd0ec71789d2fa06224866d882cd1515f"
+    },
+    {
+      "file": "reactrouter.svg",
+      "bytes": 1286,
+      "sha256": "ecd8514e2fed625420125057a3e0e8cb84e7c528d3204efaebe8057d7f3b2d12"
+    },
+    {
+      "file": "tailwindcss.svg",
+      "bytes": 689,
+      "sha256": "f8cec54589553807eb603bcaf4e056aa090196211698b056542e3cc62a2f3448"
+    },
+    {
+      "file": "typescript.svg",
+      "bytes": 943,
+      "sha256": "c9191199f4049920c2fc19035b8a6664f37f4689fcd9e8434e786097e78863f0"
+    },
+    {
+      "file": "vercel.svg",
+      "bytes": 113,
+      "sha256": "ab2bb3dfbed3aa637dc1847e42d1a576e50b0d7717092d781ab43e91073ace23"
+    },
+    {
+      "file": "vite.svg",
+      "bytes": 171,
+      "sha256": "4f1efe20dcae967dfe94ee5cab513caf5be12b9b1fe5ac9d0e73e352addcd678"
+    }
+  ]
+}

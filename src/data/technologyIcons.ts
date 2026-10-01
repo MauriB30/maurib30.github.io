@@ -1,0 +1,55 @@
+import {
+  Bot,
+  Cloud,
+  Database,
+  FileCheck2,
+  GitFork,
+  Network,
+  ShieldCheck,
+  Sparkles,
+  Terminal,
+  Workflow,
+  Zap,
+  type LucideIcon,
+} from 'lucide-react';
+
+// SVG locales de Devicon v2.17.0. La revisión y sus hashes están en public/icons/devicon/source.json.
+export const technologyLogos: Record<string, { file: string; monochrome?: boolean }> = {
+  HTML: { file: 'html5' },
+  CSS: { file: 'css3' },
+  JavaScript: { file: 'javascript' },
+  TypeScript: { file: 'typescript' },
+  React: { file: 'react' },
+  'Next.js': { file: 'nextjs', monochrome: true },
+  Vite: { file: 'vite' },
+  'Tailwind CSS': { file: 'tailwindcss' },
+  Context: { file: 'react' },
+  'React Router': { file: 'reactrouter' },
+  'Node.js': { file: 'nodejs' },
+  Express: { file: 'express', monochrome: true },
+  MongoDB: { file: 'mongodb' },
+  Mongoose: { file: 'mongoose', monochrome: true },
+  Git: { file: 'git' },
+  GitHub: { file: 'github', monochrome: true },
+  Postman: { file: 'postman' },
+  Vercel: { file: 'vercel', monochrome: true },
+  'MongoDB Atlas': { file: 'mongodb' },
+  PostgreSQL: { file: 'postgresql' },
+  Prisma: { file: 'prisma', monochrome: true },
+};
+
+// Símbolos de Lucide para conceptos y herramientas sin logo en esa versión de Devicon.
+export const technologySymbols: Record<string, LucideIcon> = {
+  'TanStack Query': Workflow,
+  'React Hook Form': FileCheck2,
+  Zod: ShieldCheck,
+  'APIs REST': Network,
+  Fork: GitFork,
+  'Thunder Client': Zap,
+  Render: Cloud,
+  Codex: Bot,
+  'Claude Code': Terminal,
+  'GitHub Copilot': Bot,
+  Gemini: Sparkles,
+  SQL: Database,
+};

@@ -1,0 +1,91 @@
+.room-experience {
+  min-width: 0;
+  width: 100%;
+  margin: 0;
+  scroll-margin-top: 110px;
+}
+.room-stage {
+  position: relative;
+  width: 100%;
+  isolation: isolate;
+}
+.pixi-room,
+.pixi-room canvas {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.pixi-room {
+  filter: drop-shadow(0 12px 12px #00000040);
+}
+.room-speech-bubble {
+  position: absolute;
+  z-index: 2;
+  transform: translate(-50%, -100%);
+  padding: 8px 12px;
+  border: 1px solid #9bab90;
+  border-radius: 4px;
+  background: #e7eddf;
+  color: #242c26;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 1.4;
+  white-space: nowrap;
+  pointer-events: none;
+  box-shadow: 0 4px 8px #00000026;
+}
+.room-speech-bubble::after {
+  content: '';
+  position: absolute;
+  left: calc(50% - 5px);
+  bottom: -6px;
+  width: 10px;
+  height: 10px;
+  border-right: 1px solid #9bab90;
+  border-bottom: 1px solid #9bab90;
+  background: #e7eddf;
+  transform: rotate(45deg);
+}
+.scene-fallback {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+}
+.scene-fallback p {
+  max-width: 88%;
+  padding: 10px 14px;
+  background: var(--page);
+  color: var(--ink);
+  border: 1px solid #626b6c;
+  border-radius: 6px;
+  font-size: 13px;
+  line-height: 1.5;
+  text-align: center;
+}
+.room-keyboard-actions {
+  position: absolute;
+  z-index: 2;
+  inset: auto 10px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+  padding: 12px;
+  border-radius: 6px;
+  color: var(--ink);
+  background: var(--page);
+  opacity: 0;
+  pointer-events: none;
+}
+.room-keyboard-actions:focus-within {
+  opacity: 1;
+  pointer-events: auto;
+}
+.room-keyboard-actions button {
+  min-height: 44px;
+  padding: 8px 12px;
+  border: 1px solid #7f8a85;
+  border-radius: 4px;
+  font-size: 12px;
+}
