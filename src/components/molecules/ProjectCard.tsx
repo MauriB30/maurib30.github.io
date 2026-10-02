@@ -40,6 +40,7 @@ export function ProjectCard({ project }: { project: Project }) {
             ))}
           </ul>
         )}
+        {project.visitNote ? <p>{project.visitNote}</p> : null}
         <div className='project-links'>
           {project.url && (
             <a

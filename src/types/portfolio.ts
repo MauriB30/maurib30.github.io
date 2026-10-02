@@ -8,6 +8,7 @@ export interface Project {
   name: string;
   category: string;
   description: string;
+  visitNote?: string;
   url: string;
   technologies?: string[];
   image?: string;

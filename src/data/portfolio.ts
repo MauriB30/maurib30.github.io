@@ -66,6 +66,8 @@ export const portfolio: Portfolio = {
         'Agregaciones para los resúmenes, relaciones con populate, índices de búsqueda y transacciones para confirmar o revertir operaciones relacionadas.',
         'Despliegue en Vercel y Render con MongoDB Atlas. Pruebas manuales de la aplicación y sus APIs, y diagnóstico de errores mediante logs.',
       ],
+      visitNote:
+        'El primer acceso puede demorar porque el backend está alojado en un plan gratuito.',
       url: 'https://www.cerogasto.com.ar',
     },
   ],
